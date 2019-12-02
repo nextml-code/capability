@@ -1,23 +1,19 @@
 # Introduction
 The purpose of this repository is to prove our capability to deliver machine learning solutions. It's short and to the point.
 
-### Simplicity
-Simple solutions are usually good and "cool" tricks redundant. The goal is to show you that we are professionals who deliver value. We don't want to "impress" by making our projects seem more complicated than they are.
-
-### Cutting Edge
-With that said, we still want to prove that we have the skills (both in machine learning and programming) to develop and implement cutting-edge algorithms. 
-
-### Sharing code
-We can't share the entire codebases of our projects, but we can and will share relevant code-snippets.
-
-### Content
-Below, you can read short summaries about some of our projects, products, and spare-time experiments. We will describe how we approached the problem, what we tested, and the solution.
+- **Simplicity:** Simple solutions are usually good and "cool" tricks redundant. The goal is to show you that we are professionals who deliver value. We don't want to "impress" by making our projects seem more complicated than they are.
+- **Cutting Edge:** With that said, we still want to prove that we have the skills (both in machine learning and programming) to develop and implement cutting-edge algorithms. 
+- **Sharing codee:** We can't share the entire codebases of our projects, but we can and will share relevant code-snippets.
 
 # Projects
 
 ### Railroad Inspection
 
-In collaboration with companies working on railroad inspection and maintenance, we have developed algorithms to detect clamps on the contact wire. 
+In collaboration with two companies working on railroad inspection and maintenance, we are developing algorithms for identifying critical infrastructure and potential damages. The data are images taken from trains.
+
+One algorithm that we have delivered is responsible for detecting clamps on the contact wire. The challenges were:
+1. A very unbalanced dataset => Sampeling images based on class-distribution, and then based on loss.
+2. Speed => A [custom architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) for creating and processing masks compared to alternatives such as Unet.
 
 The majority of images did not contains any clamps, and there were different types of clamps. The challenges in this project was an unbalanced dataset, 
 
