@@ -15,7 +15,16 @@ Below, you can read short summaries about some of our projects, products, and sp
 
 # Projects
 
-### Detecting Clamps
+### Railroad Inspection
+
+In collaboration with companies working on railroad inspection and maintenance, we have developed algorithms to detect clamps on the contact wire. 
+
+The majority of images did not contains any clamps, and there were different types of clamps. The challenges in this project was an unbalanced dataset, 
+
+
+The dataset is unbalanced in multiple ways.
+1. There are many images containing
+
 
 - Speed
 - Unbalanced dataset => required sampleling, first same of all class, and then in that stream we sampled by loss.
@@ -53,16 +62,12 @@ state of the art for object tracking using correlation filters to follow objects
 
 ### Rambot Legal
 
-
-
-# Products
-
-### Object Tracking
-
-### Speech Enhancement
-
 # Spare Time
 
+### Semi-supervised
+
+Tested different semi supervised approaches on mnist
+- mixmatch
 
 ### Generating climbing problems
 Two of our colleagues are passionate about bouldering. They developed an algorithm that 
