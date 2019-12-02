@@ -9,36 +9,17 @@ The purpose of this repository is to prove our capability to deliver machine lea
 
 ### Railroad Inspection
 
-In collaboration with two companies working on railroad inspection and maintenance, we are developing algorithms for identifying critical infrastructure and potential damages. The data are images taken from trains.
+In collaboration with two companies working with railroad inspection and maintenance, we are developing algorithms for identifying critical infrastructure and potential damages. The data are images taken from trains.
 
-One algorithm that we have delivered is responsible for detecting clamps on the contact wire. The challenges were:
-1. A very unbalanced dataset => Sampeling images based on class-distribution, and then based on loss.
-2. Speed => A [custom architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) for creating and processing masks compared to alternatives such as Unet.
+One algorithm is responsible for detecting clamps on contact wires. It's a simple object detection problem, but there are some interesting challenges:
 
-The majority of images did not contains any clamps, and there were different types of clamps. The challenges in this project was an unbalanced dataset, 
-
-
-The dataset is unbalanced in multiple ways.
-1. There are many images containing
+| Challenge | Solution |
+|:----------|:---------|
+| The dataset is very unbalanced. 99% of the images does not contains clamps, and there are different types of clamps | Sampeling images based on class-distribution, and then based on loss.|
+| The algorithm has to analyze a massive amount of data, so speed is critical. |  A [custom architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) for creating and processing masks compared to alternatives such as Unet. |
 
 
-- Speed
-- Unbalanced dataset => required sampleling, first same of all class, and then in that stream we sampled by loss.
-  Most images that didn't contain anything was uninteresting, but 
-
-- Interesting architecture with multiple outputs
-- Customized evaluation
-
-Multiple cameras
-
-*Tested*
-- Mixup
-- 
-
-
-- Image inpainting for p anomalies. 
-- Variational auto encoder to find anomalies
-- Using latent representation to cluster anomalies to see if we can find similar clusters
+We are also using image inpainting to detect anomalies that might be damages.
 
 ### Object Tracking
 
