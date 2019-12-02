@@ -1,11 +1,11 @@
-## Introduction
+# Introduction
 The purpose of this repository is to prove our capability to deliver machine learning solutions. It's short and to the point.
 
 ### Simplicity
 Simple solutions are usually good and "cool" tricks redundant. The goal is to show you that we are professionals who deliver value. We don't want to "impress" by making our projects seem more complicated than they are.
 
 ### Cutting Edge
-With that said, we will still prove that we have the skills (both in machine learning and programming) to work on challening use-cases and develop and implement cutting-edge algorithms. 
+With that said, we still want to prove that we have the skills (both in machine learning and programming) to develop and implement cutting-edge algorithms. 
 
 ### Sharing code
 We can't share the entire codebases of our projects, but we can and will share relevant code-snippets.
@@ -13,7 +13,7 @@ We can't share the entire codebases of our projects, but we can and will share r
 ### Content
 Below, you can read short summaries about some of our projects, products, and spare-time experiments. We will describe how we approached the problem, what we tested, and the solution.
 
-## Projects
+# Projects
 
 ### Detecting Clams
 
@@ -21,13 +21,13 @@ Below, you can read short summaries about some of our projects, products, and sp
 
 ### Project 3
 
-## Products
+# Products
 
 ### Object Tracking
 
 ### Speech Enhancement
 
-## Spare Time
+# Spare Time
 
 ### Generating climbing problems
 
