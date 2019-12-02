@@ -15,11 +15,45 @@ Below, you can read short summaries about some of our projects, products, and sp
 
 # Projects
 
-### Detecting Clams
+### Detecting Clamps
 
-### Project 2
+- Speed
+- Unbalanced dataset => required sampleling, first same of all class, and then in that stream we sampled by loss.
+  Most images that didn't contain anything was uninteresting, but 
 
-### Project 3
+- Interesting architecture with multiple outputs
+- Customized evaluation
+
+Multiple cameras
+
+*Tested*
+- Mixup
+- 
+
+
+- Image inpainting for p anomalies. 
+- Variational auto encoder to find anomalies
+- Using latent representation to cluster anomalies to see if we can find similar clusters
+
+### Object Tracking
+
+- 
+- (Tracking) Correlation filters, fourier transform in 2d => complex conjugate
+
+state of the art for object tracking using correlation filters to follow objects across frames. 
+
+
+### Audio Denoising
+
+- Generated data by combining podcasts with noise
+- STFT to convert to spectogram
+- Unet with Efficient net to create a mask
+- multiplty mask with spectogram
+- 
+
+### Rambot Legal
+
+
 
 # Products
 
@@ -29,10 +63,12 @@ Below, you can read short summaries about some of our projects, products, and sp
 
 # Spare Time
 
-### Generating climbing problems
 
+### Generating climbing problems
 Two of our colleagues are passionate about bouldering. They developed an algorithm that 
 
+
+### Labyrint
 
 
 [mixmatch-pytorch](https://github.com/FelixAbrahamsson/mixmatch-pytorch)
