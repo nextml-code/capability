@@ -66,7 +66,7 @@ In Lably, the algorithm performing the task is also responsible for choosing the
 With semi-supervised learning, we can create useful algorithms with very little data. Initially, we did mixup and mixmatch on mnist with ten annotated examples. The results were good right away, with an accuracy score of 78%. The implementation and usage are relatively simple:
 - [mixup (tensorflow)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixup.py)
 - [mixmatch (tensorflow, extension of mixup)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixmatch.py)
-- [mixmatch (pytorch)]([mixmatch-pytorch](https://github.com/FelixAbrahamsson/mixmatch-pytorch)
+- [mixmatch (pytorch)](https://github.com/FelixAbrahamsson/mixmatch-pytorch)
 
 ### Generating climbing problems
 The team at Aiwizo goes bouldering every Thursday. For fun, we developed an algorithm that generates problems on a climbing board. The chosen holds are strongly dependent on each other and were modeled in a few different ways:
