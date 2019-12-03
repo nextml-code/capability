@@ -1,5 +1,5 @@
 # Introduction
-The purpose of this repository is to prove our capability to deliver machine learning solutions. It’s short and to the point.
+The purpose of this repository is to prove our capability to deliver machine learning solutions.
 
 In machine learning, simple solutions usually work, and “cool” tricks often redundant. Our goal is to deliver value, not to “impress” with overly complicated solutions.
 
