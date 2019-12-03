@@ -21,12 +21,12 @@ In collaboration with two companies working with railroad maintenance, we are de
 
 One algorithm is responsible for detecting clamps on contact wires. It's a simple object detection problem, but there are some challenges:
 
-| Challenge | Solution |
-|:----------|:---------|
-| The dataset is very unbalanced. 99% of the images does not contains clamps, and there are different types of clamps | Sampeling images based on class-distribution, and then based on loss.|
-| The algorithm has to analyze a massive amount of data, so speed is critical. |  A [custom architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) for creating and processing masks compared to alternatives such as Unet. |
-| Multiple cameras |  |
-| Overlapping images | |
+- The dataset is very unbalanced. 99% of the images has no clamps, and there are different types of clamps
+- The algorithm has to analyze a massive amount of data, so speed is criticalä
+- There are multiple cameras
+- The images are overlapping
+
+To handle the unbalanced dataset we sample images based on class-distribution, and then sample again based on loss. The algorithm has an [interesting architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) with multiple outputs.
 
 
 ### Object Tracking
