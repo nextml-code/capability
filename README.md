@@ -5,34 +5,35 @@ In machine learning, simple solutions usually work, and "cool" tricks redundant.
 
 With that said, we still want to prove that we have the skills (both in machine learning and programming) to develop and implement cutting-edge algorithms.
 
-In this Readme, you can read about some of our projects and solutions. We can't share the entire codebases, but we will add links to relevant code-snippets.
+Here, you can read about some of our projects and solutions. We can't share the entire codebases, but we will add links to relevant code-snippets.
 
 ### Technologies
 
 We use PyTorch or Tensorflow to develop algorithms, but we prefer PyTorch. In the experimentation phase, we use [guildai](https://github.com/guildai/guildai) to keep track of every experiment. Guildai gives us many tools to compare different runs, and we can easily select the best algorithm.
 
-To make sure that you can use the algorithm in your systems, we create a lightweight and easy to deploy microservice. 
+To make sure that you can use the algorithm in your systems, we create a lightweight and easy to deploy microservice.
 
 # Projects
 
 ### Railroad Inspection
 
-In collaboration with two companies working with railroad inspection and maintenance, we are developing algorithms for identifying critical infrastructure and potential damages. The data are images taken from trains.
+In collaboration with two companies working with railroad maintenance, we are developing algorithms for identifying critical infrastructure and anomalies.
 
-One algorithm is responsible for detecting clamps on contact wires. It's a simple object detection problem, but there are some exciting challenges:
+One algorithm is responsible for detecting clamps on contact wires. It's a simple object detection problem, but there are some challenges:
 
 | Challenge | Solution |
 |:----------|:---------|
 | The dataset is very unbalanced. 99% of the images does not contains clamps, and there are different types of clamps | Sampeling images based on class-distribution, and then based on loss.|
 | The algorithm has to analyze a massive amount of data, so speed is critical. |  A [custom architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) for creating and processing masks compared to alternatives such as Unet. |
-| Multiple cameras
-| Overlapping images
+| Multiple cameras |  |
+| Overlapping images | |
+
 
 ### Object Tracking
 
 To measure the flow of trafic in intersections we developed algorithms for tracking objects across frames. It uses [correlation filters](https://github.com/Aiwizo/capability/blob/master/object_tracking/correlation.py) for auto-correlation and cross-correlation in order to generalize better to new data.
 
-There was a lack of annotated data in the domain of interest which provided an interesting challenge. The first algorithm was developed on made up data that we generated using random noise.
+There was a lack of annotated data in the domain of interest which provided an interesting challenge. We trained the first algorithm on made up data that we generated using random noise.
 
 ### Audio Denoising
 
@@ -44,9 +45,14 @@ A snapshot of our data pipeline can be found [here](https://github.com/Aiwizo/ca
 
 ### Legal
 
+One customer spend thosands of hours every year to find risk in legal documents. We let the legal department annotate risk in real contracts and developed algorithms to make them more effective.
 
+The algorithm in production is a transformer, which is the current state of the art in NLP. The results became better we used BERT, but the improved performance did not outdo the loss in speed.
 
 ### Lably
+
+For annotating data we have created a novel tool called Lably. The reasoning behind Lably is that, in a large datasets, some datapoints are more important than other. In Lably, the algorithm performing the task is also responsible for choosing the next data point to annotate.
+
 
 # Recreational projects
 
