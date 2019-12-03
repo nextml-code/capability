@@ -43,13 +43,13 @@ The algorithm is has a UNet-architecture with EfficientNet as its backbone. It p
 
 A snapshot of our data pipeline can be found [here](https://github.com/Aiwizo/capability/tree/master/audio_denoising/data.py)!
 
-### Legal
+### Identifying Legal Risk
 
 One customer spend thosands of hours every year to find risk in legal documents. We let the legal department annotate risk in real contracts and developed algorithms to make them more effective.
 
 The algorithm in production is a transformer, which is the current state of the art in NLP. The results became better we used BERT, but the improved performance did not outdo the loss in speed.
 
-### Lably
+### Faster Annotation
 
 For annotating data we have created a novel tool called Lably. The reasoning behind Lably is that, in a large datasets, some datapoints are more important than other. In Lably, the algorithm performing the task is also responsible for choosing the next data point to annotate.
 
@@ -58,25 +58,20 @@ For annotating data we have created a novel tool called Lably. The reasoning beh
 
 ### Semi-supervised
 
-With semi-supervised learning we can create useful algorithms with very little data. Initially, we did [mixup and mixmatch on mnist with 10 annotated examples](https://github.com/Aiwizo/mnist). The results was good right away, with an accuracy score of 78%. 
-
-The implementation and usage is relatively simple:
+With semi-supervised learning we can create useful algorithms with very little data. Initially, we did [mixup and mixmatch on mnist with 10 annotated examples](https://github.com/Aiwizo/mnist). The results was good right away, with an accuracy score of 78%. The implementation and usage is relatively simple:
 - [mixup (tensorflow)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixup.py)
 - [mixmatch (tensorflow, extension of mixup)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixmatch.py)
 - [mixmatch (pytorch)]([mixmatch-pytorch](https://github.com/FelixAbrahamsson/mixmatch-pytorch)
 
 
 ### Generating climbing problems
-Two of our colleagues are passionate about bouldering. They developed an algorithm that creates problems on a climbing board. The chosen holds are strongly dependent on each other and was modelled in a few different ways:
+The team at Aiwizo goes bouldeting every Thursday. For fun, we developed an algorithm that generates problems on a climbing board. The chosen holds are strongly dependent on each other and was modelled in a few different ways:
 
 - Decoupled sampling by predicting the next hold using modified loss
 - Predict full board using the [Gumbel-softmax trick](https://pytorch.org/docs/stable/distributions.html#relaxedonehotcategorical) and modified loss for steps in-between
 - Hybrid variantional autoencoder with adverserial loss
 - Variational autoencoder
 - Generative adverserial network
-
-Features like difficulty were also introduced to the model to steer what kind of problem would be created.
-
 
 ### Discrete relaxation
 Much like the [Gumbel-softmax trick](https://pytorch.org/docs/stable/distributions.html#relaxedonehotcategorical) that tries to let us get gradients through a discrete transformation, there is the idea that we can replace the derivative of a discrete function during training and analyze what happens mathematically. This has already shown to be very useful in [sequential modelling](https://arxiv.org/pdf/1801.09797.pdf) and creating better [variational autoencoders](https://arxiv.org/pdf/1906.00446.pdf). We implemented a couple of versions of our own and [the original](https://github.com/Aiwizo/capability/blob/master/kaiser_step.py) to try on some simple problems.
