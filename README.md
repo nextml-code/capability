@@ -1,7 +1,7 @@
 # Introduction
 The purpose of this repository is to prove our capability to deliver machine learning solutions.
 
-In machine learning, simple solutions usually work, and “cool” tricks often redundant. Our goal is to deliver value, not to “impress” with overly complicated solutions.
+In machine learning, simple solutions usually work, and “cool” tricks are often redundant. Our goal is to deliver value, not to “impress” with overly complicated solutions.
 
 With that said, we still want to prove that we have the skills (both in machine learning and programming) to develop and implement cutting-edge algorithms.
 
@@ -9,7 +9,7 @@ Here, you can read about some of our projects and solutions. We can’t share th
 
 ### Technologies
 
-We use PyTorch or Tensorflow to develop algorithms, but we prefer PyTorch. In the experimentation phase, we use [guildai](https://github.com/guildai/guildai) to keep track of each experiment. Guildai gives us many tools to compare runs and select the best algorithm.
+We use PyTorch or Tensorflow to develop algorithms, but we prefer PyTorch. In the experimentation phase, we use [guildai](https://github.com/guildai/guildai) to keep track of each experiment. Guildai gives us many tools to compare runs and makes it easy to select the best algorithm.
 
 To make sure that you can use the algorithm in your systems, we create a lightweight and easy to deploy microservice.
 
