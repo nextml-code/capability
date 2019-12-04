@@ -72,6 +72,10 @@ For annotating data, we have created a novel tool called Lably. The reasoning be
 
 In Lably, the algorithm performing the task is also responsible for choosing the next data point to annotate.
 
+Lably                    |
+:------------------------:
+![](https://github.com/Aiwizo/capability/blob/master/images/annotating.png)
+
 # Recreational projects
 
 ### Semi-supervised
