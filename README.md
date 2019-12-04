@@ -76,7 +76,7 @@ Lably                    |
 
 ### Semi-supervised
 
-With semi-supervised learning, we can create useful algorithms with very little data. Initially, we did mixup and mixmatch on (mnist)[https://github.com/Aiwizo/capability/blob/master/semi_supervised/mnist] with 10 annotated examples. The results were good right away, with an accuracy score of 78%. The implementation and usage are relatively simple:
+With semi-supervised learning, we can create useful algorithms with very little data. Initially, we did mixup and mixmatch on [mnist](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mnist) with 10 annotated examples. The results were good right away, with an accuracy score of 78%. The implementation and usage are relatively simple:
 - [mixup (tensorflow)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixup.py)
 - [mixmatch (tensorflow, extension of mixup)](https://github.com/Aiwizo/capability/blob/master/semi_supervised/mixmatch.py)
 - [mixmatch (pytorch)](https://github.com/FelixAbrahamsson/mixmatch-pytorch)
