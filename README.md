@@ -74,7 +74,7 @@ In Lably, the algorithm performing the task is also responsible for choosing the
 
 Lably                    |
 :------------------------:
-![](https://github.com/Aiwizo/capability/blob/master/images/annotating.png)
+![](./images/tiger-annotation.gif)
 
 # Recreational projects
 
