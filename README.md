@@ -50,11 +50,11 @@ Currently, we are building a product for audio denoising. The training data is g
 
 The algorithm is a UNet with EfficientNet as its backbone. It predicts a smooth mask with values between 0-1 that we multiply with the spectrogram of the mixed audio.
 
-You can find a snapshot of our data pipeline [here](https://github.com/Aiwizo/capability/tree/master/audio_denoising/data.py)!
-
 Mixed Spectrogram             |  Predicted Mask          |  Predicted Spectrogram | Target Spectrogram |
 :------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/Aiwizo/capability/blob/master/images/mixed_spectrogram.png)  |  ![](https://github.com/Aiwizo/capability/blob/master/images/predicted_mask.png)  |  ![](https://github.com/Aiwizo/capability/blob/master/images/predicted_spectrogram.png)  |  ![](https://github.com/Aiwizo/capability/blob/master/images/target_spectrogram.png)
+
+You can find a snapshot of our data pipeline [here](https://github.com/Aiwizo/capability/tree/master/audio_denoising/data.py)
 
 ### Identifying Legal Risk
 
