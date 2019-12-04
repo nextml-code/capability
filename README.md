@@ -27,6 +27,10 @@ One algorithm is responsible for detecting clamps on contact wires. It’s a sim
 
 To handle the unbalanced dataset, we use stratified sampling based on class and sample within each strata based on previous loss. The algorithm has a [specialized architecture](https://github.com/Aiwizo/capability/blob/master/railroad_inspection/architecture.py) to make it fast, to support multiple outputs, and enforce coherent behaviour through structure. One such structural detail is the use of a common response map for both location and probability of detection.
 
+Type 1 Clamp              |  Type 2 Clamp
+:------------------------:|:-------------------------:
+![](https://github.com/Aiwizo/capability/blob/master/images/clamps1.png)  |  ![](https://github.com/Aiwizo/capability/blob/master/images/clamps2.png)
+
 ### Object Tracking
 
 To measure the flow of traffic in intersections, we developed algorithms for tracking objects across frames. It uses [correlation filters](https://github.com/Aiwizo/capability/blob/master/object_tracking/correlation.py) for auto-correlation and cross-correlation in order to generalize better to new data.
