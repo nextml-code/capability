@@ -1,0 +1,19 @@
+- model: mnist
+  description: mnist toy model
+  operations:
+    train:
+      main: train
+      sourcecode:
+      - '*.py'
+    retrain:
+      main: train
+      sourcecode:
+      - '*.py'
+      requires:
+      - model
+  resources:
+    model:
+      name: model
+      path: model
+      sources:
+      - operation: train|retrain
