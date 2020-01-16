@@ -21,4 +21,4 @@ class KaiserStep(torch.nn.Module):
         return output
 
     def forward(self, x):
-        return saturating_sigmoid(x + self.N.sample(x.shape))
+        return saturating_sigmoid(x + self.N.sample(x.shape).to(x))
